@@ -16,6 +16,7 @@ https://www.analyticsvidhya.com/blog/2016/04/deep-learning-computer-vision-intro
 Using pip install –user scipy dlib tensorflow tflearn scikit-image
 
 <b>Step 2: Approach</b>
+
 <br>We will use deep neural network to produce face encodings using the following steps. 
 When we pass two different images of the same person the network should return closer output (numbers) 
 for both images and when we pass images of two different people, it should return two different outputs. 
@@ -25,7 +26,7 @@ dlib gives us face encodings, when we pass in the image of someone’s face and 
 images which will tell us if someone’s face matches with anyone we have.</br>
 
 <b>Setp 3: Setup your project</b>
-<p>
+<pre>
     Main_Folder
       |- images
       |- testimages
@@ -33,7 +34,7 @@ images which will tell us if someone’s face matches with anyone we have.</br>
       |- shape_predictor_68_face_landmarks.dat
       |- reconizer.py
       |- find_match.py
-    </P>  
+    </pre>  
 <b> Here </b>
 
   -	put jpg images of the known faces to ‘images’ folder (a single instance of each face with the name of the person.
@@ -44,7 +45,7 @@ images which will tell us if someone’s face matches with anyone we have.</br>
     http://dlib.net/files/dlib_face_recognition_resnet_model_v1.dat.bz2
     
 <b>Step 4: Run find_match.py and you will get output that looks like</b>
-<p>
+<pre>
       testimages/image_0092.jpg==> 			Kiros
       Please change image: testimages/ image_0036.jpg - it has 0 faces; it can only have one
       testimages/image_0006.jpg ==> 		Gereziher
@@ -52,5 +53,5 @@ images which will tell us if someone’s face matches with anyone we have.</br>
       testimages/image_0116.jpg==> 			Tesfu
       testimages/image_0093.jpg==> 			Tesfu
       testimages/image_0003.jpg==> 			Haftom
-  </p>
+  </pre>
 (Deep neural network for face recognition using our own CNN Model…. Coming soon).
