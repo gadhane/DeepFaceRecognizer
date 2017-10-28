@@ -16,13 +16,13 @@ https://www.analyticsvidhya.com/blog/2016/04/deep-learning-computer-vision-intro
 Using pip install –user scipy dlib tensorflow tflearn scikit-image
 
 <b>Step 2: Approach</b>
-We will use deep neural network to produce face encodings using the following steps. 
+<br>We will use deep neural network to produce face encodings using the following steps. 
 When we pass two different images of the same person the network should return closer output (numbers) 
 for both images and when we pass images of two different people, it should return two different outputs. 
 This means, the NN should be trained to automatically identify features of faces and calculate the encodings. 
 In this example we will not build our neural network to train every image, rather we will use trained model through dlib.
 dlib gives us face encodings, when we pass in the image of someone’s face and compare encodings of faces from different 
-images which will tell us if someone’s face matches with anyone we have.
+images which will tell us if someone’s face matches with anyone we have.</br>
 
 <b>Setp 3: Setup your project</b>
     Main_Folder
