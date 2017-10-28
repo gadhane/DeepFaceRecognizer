@@ -25,6 +25,7 @@ dlib gives us face encodings, when we pass in the image of someone’s face and 
 images which will tell us if someone’s face matches with anyone we have.</br>
 
 <b>Setp 3: Setup your project</b>
+<p>
     Main_Folder
       |- images
       |- testimages
@@ -32,7 +33,9 @@ images which will tell us if someone’s face matches with anyone we have.</br>
       |- shape_predictor_68_face_landmarks.dat
       |- reconizer.py
       |- find_match.py
-Here 
+    </P>  
+<b> Here </b>
+
   -	put jpg images of the known faces to ‘images’ folder (a single instance of each face with the name of the person.
   E.g. Kiros.jpg, Gereziher.jpg, Haftom.jpg, Tesfu.jpg).
   -	Then put a multiple instance of jpg images you want to recognize inside ‘testimages’ folder
@@ -41,6 +44,7 @@ Here
     http://dlib.net/files/dlib_face_recognition_resnet_model_v1.dat.bz2
     
 <b>Step 4: Run find_match.py and you will get output that looks like</b>
+<p>
       testimages/image_0092.jpg==> 			Kiros
       Please change image: testimages/ image_0036.jpg - it has 0 faces; it can only have one
       testimages/image_0006.jpg ==> 		Gereziher
@@ -48,4 +52,5 @@ Here
       testimages/image_0116.jpg==> 			Tesfu
       testimages/image_0093.jpg==> 			Tesfu
       testimages/image_0003.jpg==> 			Haftom
+  </p>
 (Deep neural network for face recognition using our own CNN Model…. Coming soon).
